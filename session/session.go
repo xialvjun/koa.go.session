@@ -8,6 +8,8 @@ import (
 )
 
 var key string
+
+// todo: wrap mem in a mutex
 var mem = make(map[string]interface{})
 
 func Middleware(setkey string) koa.Middleware {
